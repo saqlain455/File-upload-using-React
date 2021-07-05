@@ -5,6 +5,7 @@ import {Switch,BrowserRouter, Route} from 'react-router-dom';
 import Upload from './component/upload'
 import Download from './component/download'
 import Del from './component/del'
+import Addpost from './component/addpost'
 function Main() {
   return (
     <main>
@@ -13,6 +14,7 @@ function Main() {
             <Route path='/Upload'component={Upload}/>
             <Route path='/Download'component={Download}/>
             <Route path='/Delete'component={Del}/>
+            <Route path='/Addpost'component={Addpost}/>
         </Switch>
     </main>
   );
