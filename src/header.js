@@ -4,9 +4,6 @@ const Header=()=>{
         <nav >
             <ul style={{flexDirection:'column'}}>
                 <li> <Link to='/'>Home</Link></li>
-                <li><Link to='/Upload'>Upload</Link></li>
-                <li><Link to='/Download'>Download</Link></li>
-                <li><Link to='/Delete'>Delete</Link></li>
                 <li><Link to='/Addpost'>Addpost</Link></li>
 
             </ul>    
@@ -14,3 +11,8 @@ const Header=()=>{
     </header>)
 }
 export default Header
+
+
+                // <li><Link to='/Upload'>Upload</Link></li>
+                // <li><Link to='/Download'>Download</Link></li>
+                // <li><Link to='/Delete'>Delete</Link></li>

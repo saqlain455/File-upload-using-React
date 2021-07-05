@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Button from '@material-ui/core/Button';
-export default function Del() {
+export default function Addpost() {
     let UPLOAD_URL="http://localhost:3000/teacher";
     const [gettitile,settitle]=useState();
     const [getrole,setrole]=useState();
@@ -30,11 +30,11 @@ export default function Del() {
       };
     return (
         <div>
-            <h1>Teacher can delete the assignment by id </h1>
-            <input type='text' placeholder='enter title' value={getId} onChange={(e)=>settitle(e.target.value)}/>
-            <input type='text' placeholder='enter role' value={getId} onChange={(e)=>setrole(e.target.value)}/>
-            <input type='text' placeholder='enter Experience' value={getId} onChange={(e)=>setExper(e.target.value)}/>
-            <input type='text' placeholder='enter technologies' value={getId} onChange={(e)=>settech(e.target.value)}/>
+            <h1>Admin can post the job! terminal commponent </h1>
+            <input type='text' placeholder='enter title' value={gettitile} onChange={(e)=>settitle(e.target.value)}/>
+            <input type='text' placeholder='enter role' value={getrole} onChange={(e)=>setrole(e.target.value)}/>
+            <input type='text' placeholder='enter Experience' value={getExper} onChange={(e)=>setExper(e.target.value)}/>
+            <input type='text' placeholder='enter technologies' value={gettech} onChange={(e)=>settech(e.target.value)}/>
             <Button variant="contained" color="secondary" onClick={Addpost} >Add post</Button>
         </div>
 
